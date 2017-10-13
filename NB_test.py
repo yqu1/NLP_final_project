@@ -61,7 +61,7 @@ class Naive_Bayes_Classifier:
 					p_k_w = p_k_w * temp
 				prob.append(p_k * p_k_w)
 			result.append(self.types[np.argmax(prob)])
-		print(accuracy_score(result, [i[1] for i in test_data]))
+		print("Accuracy: {:.2%}".format(accuracy_score(result, [i[1] for i in test_data])))
 
 m = Naive_Bayes_Classifier(train)
 m.train()
