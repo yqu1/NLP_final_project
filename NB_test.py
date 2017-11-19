@@ -13,6 +13,7 @@ for index, row in df.iterrows():
 		continue
 	data.append([re.sub(r'[^a-zA-Z]', ' ', re.sub(r'@[0-9a-zA-Z]+', ' ', re.sub(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', " ", row['Tweet']))).lower(), row['Label']])
 
+df = df.sample(frac=1).reset_index(drop=True)
 
 train, test = data[7000:], data[:7000]
 
