@@ -7,9 +7,9 @@ class Similarity_Model(object):
 	def __init__(self):
 		self.source_doc = ''
 		self.target_docs = []
-		self.ds = DocSim(KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin.gz', binary=True))
+		self.ds = DocSim(KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True))
 	
-	def get_similarity(sd):
+	def get_similarity(self, sd):
 		sd = self.vectorize(sd)
 		result = {}
 		for fd in os.listdir('data_transform'):
