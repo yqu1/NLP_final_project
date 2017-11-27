@@ -8,8 +8,8 @@ def get_text_from_xml(filename):
 			text.append(elem.text)
 	return text
 
-def get_text_from_bio(filename):
-	data = list()
+def get_text_from_bio(filename, outname):
+	f_out = open(outname + '.txt', 'w')
 	with open(filename) as f:
 		lines = f.readlines()
 		temp = []
@@ -17,7 +17,8 @@ def get_text_from_bio(filename):
 			l = l.split()
 			if len(l) > 1:
 				temp.append(l[0])
+				f_out.write(" ".join(temp) + "\n")
 			else:
-				data.append(temp)
 				temp = []
-	return data
+	f_out.close()
+
