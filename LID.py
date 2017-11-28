@@ -140,5 +140,5 @@ model.fit(X_train, y_train, validation_data=(X_test, y_test), batch_size=10,
           epochs=5, shuffle=True, callbacks=[earlystop_cb, check_cb, history])
 
 # just showing access to the history object
-print history.losses
-print history.accuracies
+print(history.losses)
+print(history.accuracies)
