@@ -21,15 +21,6 @@ def binarize_outshape(in_shape):
     return in_shape[0], in_shape[1], 71
 
 
-def striphtml(html):
-    p = re.compile(r'<.*?>')
-    return p.sub('', html)
-
-
-def clean(s):
-    return re.sub(r'[^\x00-\x7f]', r'', s)
-
-
 # record history of training
 class LossHistory(keras.callbacks.Callback):
     def on_train_begin(self, logs={}):
@@ -65,22 +56,18 @@ print('total chars:', len(chars))
 char_indices = dict((c, i) for i, c in enumerate(chars))
 indices_char = dict((i, c) for i, c in enumerate(chars))
 
-print('Sample doc{}'.format(docs[1200]))
 
-maxlen = 512
-max_sentences = 15
+maxlen = 1000
+max_sentences = 250
 
 X = np.ones((len(docs), max_sentences, maxlen), dtype=np.int64) * -1
-y = np.array(sentiments)
+y = np.array(labels)
 
 for i, doc in enumerate(docs):
     for j, sentence in enumerate(doc):
         if j < max_sentences:
             for t, char in enumerate(sentence[-maxlen:]):
                 X[i, j, (maxlen - 1 - t)] = char_indices[char]
-
-print('Sample chars in X:{}'.format(X[1200, 2]))
-print('y:{}'.format(y[1200]))
 
 ids = np.arange(len(X))
 np.random.shuffle(ids)
@@ -89,11 +76,11 @@ np.random.shuffle(ids)
 X = X[ids]
 y = y[ids]
 
-X_train = X[:20000]
-X_test = X[20000:]
+X_train = X[:50]
+X_test = X[50:]
 
-y_train = y[:20000]
-y_test = y[20000:]
+y_train = y[:50]
+y_test = y[50:]
 
 filter_length = [5, 3, 3]
 nb_filter = [196, 196, 256]
