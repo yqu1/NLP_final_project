@@ -33,10 +33,14 @@ def docToSentences(filename):
 	with open(filename) as f:
 		lines = f.readlines()
 		for l in lines:
-			sentences.append(clean(l.strip('\n')))
+			l = l.strip('\n')
+			if len(l) < 1:
+				continue
+			sentences.append(clean(l))
 		sentences = [sent.lower() for sent in sentences]
 	return sentences
 
+#create list of docs which are list of sentences, and list of labels for that doc
 def createDataLabel():
 	labels = []
 	docs = []
@@ -46,3 +50,17 @@ def createDataLabel():
 		labels.append(label)
 		docs.append(doc)
 	return docs, labels
+
+#split one single training data file into multiple files
+def splitFiles(filename):
+	def partition(lst, n):
+	    division = len(lst) / float(n)
+	    return [ lst[int(round(division * i)): int(round(division * (i + 1)))] for i in xrange(n) ]
+
+	with open(filename) as f:
+		lines = f.readlines()
+		for i, l in enumerate(partition(lines, 200)):
+			f_out = open(filename + str(i), 'w')
+			for line in l:
+				f_out.write(line + "\n")
+			f_out.close()
