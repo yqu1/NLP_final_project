@@ -34,7 +34,7 @@ def docToSentences(filename):
 		lines = f.readlines()
 		for l in lines:
 			l = l.strip('\n')
-			if len(l) < 1 or len(l) > 1000:
+			if len(l) < 1 or len(l) > 512:
 				continue
 			sentences.append(clean(l))
 		sentences = [sent.lower() for sent in sentences]

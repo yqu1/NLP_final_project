@@ -41,7 +41,13 @@ if len(sys.argv) == 2:
         print ("Checkpoint : %s" % str(sys.argv[1]))
         checkpoint = str(sys.argv[1])
 
+txt = ''
+
+label_map = {'es': 0, 'pt': 1}
+
 docs, labels = createDataLabel()
+for i in range(len(labels)):
+	labels[i] = label_map[labels[i]]
 
 num_sent = []
 for doc in docs:
@@ -56,8 +62,8 @@ char_indices = dict((c, i) for i, c in enumerate(chars))
 indices_char = dict((i, c) for i, c in enumerate(chars))
 
 
-maxlen = 1000
-max_sentences = 250
+maxlen = 512
+max_sentences = 4100
 
 X = np.ones((len(docs), max_sentences, maxlen), dtype=np.int64) * -1
 y = np.array(labels)
@@ -75,11 +81,11 @@ np.random.shuffle(ids)
 X = X[ids]
 y = y[ids]
 
-X_train = X[:50]
-X_test = X[50:]
+X_train = X[:300]
+X_test = X[300:]
 
-y_train = y[:50]
-y_test = y[50:]
+y_train = y[:300]
+y_test = y[300:]
 
 filter_length = [5, 3, 3]
 nb_filter = [196, 196, 256]
