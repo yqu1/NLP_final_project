@@ -3,6 +3,9 @@ from keras.layers import Dense, Input, Dropout, MaxPooling1D, Conv1D
 from keras.layers import LSTM, Lambda
 from keras.layers import TimeDistributed, Bidirectional
 from keras.layers.normalization import BatchNormalization
+import tensorflow as tf
+import keras.callbacks
+import numpy as np
 
 def binarize(x, sz=71):
     return tf.to_float(tf.one_hot(x, sz, on_value=1, off_value=0, axis=-1))
