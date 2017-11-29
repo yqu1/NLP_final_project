@@ -13,14 +13,6 @@ import sys
 import os
 
 
-def binarize(x, sz=71):
-    return tf.to_float(tf.one_hot(x, sz, on_value=1, off_value=0, axis=-1))
-
-
-def binarize_outshape(in_shape):
-    return in_shape[0], in_shape[1], 71
-
-
 # record history of training
 class LossHistory(keras.callbacks.Callback):
     def on_train_begin(self, logs={}):
