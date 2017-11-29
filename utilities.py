@@ -64,3 +64,14 @@ def splitFiles(filename):
 			for line in l:
 				f_out.write(line + "\n")
 			f_out.close()
+
+def languageList():
+	lang = []
+	with open("language_list.txt") as f:
+		lines = f.readlines()
+		for l in lines:
+			if l[0] != "[":
+				lang.append(l.split()[0])
+	return lang
+
+

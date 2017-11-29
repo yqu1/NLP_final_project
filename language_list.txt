@@ -1,0 +1,590 @@
+aa Afar
+[ data ]
+ab Abkhazian
+[ data ]
+ace Achinese
+[ data ]
+ady Adyghe
+[ data ]
+af Afrikaans
+[ data ]
+ak Akan
+[ data ]
+als Alemannisch
+[ data ]
+am Amharic
+[ data ]
+an Aragonese
+[ data ]
+ang Old English
+[ data ]
+ar Arabic
+[ data ]
+arc Aramaic
+[ data ]
+arz Egyptian Arabic
+[ data ]
+as Assamese
+[ data ]
+ast Asturian
+[ data ]
+av Avaric
+[ data ]
+ay Aymara
+[ data ]
+az Azerbaijani
+[ data ]
+azb South Azerbaijani
+[ data ]
+ba Bashkir
+[ data ]
+bar Bavarian
+[ data ]
+bat-smg Samogitian
+[ data ]
+bcl Bikol Central
+[ data ]
+be Belarusian
+[ data ]
+be-x-old Belarusian (Taraškievica)
+[ data ]
+bg Bulgarian
+[ data ]
+bh Bihari
+[ data ]
+bi Bislama
+[ data ]
+bjn Banjar
+[ data ]
+bm Bambara
+[ data ]
+bn Bangla
+[ data ]
+bo Tibetan
+[ data ]
+bpy Bishnupriya
+[ data ]
+br Breton
+[ data ]
+bs Bosnian
+[ data ]
+bug Buginese
+[ data ]
+bxr Buryat
+[ data ]
+ca Catalan
+[ data ]
+cbk-zam Chavacano de Zamboanga
+[ data ]
+cdo Min Dong Chinese
+[ data ]
+ce Chechen
+[ data ]
+ceb Cebuano
+[ data ]
+ch Chamorro
+[ data ]
+cho Choctaw
+[ data ]
+chr Cherokee
+[ data ]
+chy Cheyenne
+[ data ]
+ckb Central Kurdish
+[ data ]
+co Corsican
+[ data ]
+cr Cree
+[ data ]
+crh Crimean Turkish
+[ data ]
+cs Czech
+[ data ]
+csb Kashubian
+[ data ]
+cu Church Slavic
+[ data ]
+cv Chuvash
+[ data ]
+cy Welsh
+[ data ]
+da Danish
+[ data ]
+de German
+[ data ]
+diq Zazaki
+[ data ]
+dsb Lower Sorbian
+[ data ]
+dv Divehi
+[ data ]
+dz Dzongkha
+[ data ]
+ee Ewe
+[ data ]
+el Greek
+[ data ]
+eml Emiliano-Romagnolo
+[ data ]
+en English
+[ data ]
+eo Esperanto
+[ data ]
+es Spanish
+[ data ]
+et Estonian
+[ data ]
+eu Basque
+[ data ]
+ext Extremaduran
+[ data ]
+fa Persian
+[ data ]
+ff Fulah
+[ data ]
+fi Finnish
+[ data ]
+fiu-vro Võro
+[ data ]
+fj Fijian
+[ data ]
+fo Faroese
+[ data ]
+fr French
+[ data ]
+frp Arpitan
+[ data ]
+frr Northern Frisian
+[ data ]
+fur Friulian
+[ data ]
+fy Western Frisian
+[ data ]
+ga Irish
+[ data ]
+gag Gagauz
+[ data ]
+gan Gan Chinese
+[ data ]
+gd Scottish Gaelic
+[ data ]
+gl Galician
+[ data ]
+glk Gilaki
+[ data ]
+gn Guarani
+[ data ]
+gom Goan Konkani
+[ data ]
+got Gothic
+[ data ]
+gu Gujarati
+[ data ]
+gv Manx
+[ data ]
+ha Hausa
+[ data ]
+hak Hakka Chinese
+[ data ]
+haw Hawaiian
+[ data ]
+he Hebrew
+[ data ]
+hi Hindi
+[ data ]
+hif Fiji Hindi
+[ data ]
+ho Hiri Motu
+[ data ]
+hr Croatian
+[ data ]
+hsb Upper Sorbian
+[ data ]
+ht Haitian Creole
+[ data ]
+hu Hungarian
+[ data ]
+hy Armenian
+[ data ]
+hz Herero
+[ data ]
+ia Interlingua
+[ data ]
+id Indonesian
+[ data ]
+ie Interlingue
+[ data ]
+ig Igbo
+[ data ]
+ii Sichuan Yi
+[ data ]
+ik Inupiaq
+[ data ]
+ilo Iloko
+[ data ]
+io Ido
+[ data ]
+is Icelandic
+[ data ]
+it Italian
+[ data ]
+iu Inuktitut
+[ data ]
+ja Japanese
+[ data ]
+jam Jamaican Creole English
+[ data ]
+jbo Lojban
+[ data ]
+jv Javanese
+[ data ]
+ka Georgian
+[ data ]
+kaa Kara-Kalpak
+[ data ]
+kab Kabyle
+[ data ]
+kbd Kabardian
+[ data ]
+kg Kongo
+[ data ]
+ki Kikuyu
+[ data ]
+kj Kuanyama
+[ data ]
+kk Kazakh
+[ data ]
+kl Kalaallisut
+[ data ]
+km Khmer
+[ data ]
+kn Kannada
+[ data ]
+ko Korean
+[ data ]
+koi Komi-Permyak
+[ data ]
+kr Kanuri
+[ data ]
+krc Karachay-Balkar
+[ data ]
+ks Kashmiri
+[ data ]
+ksh Colognian
+[ data ]
+ku Kurdish
+[ data ]
+kv Komi
+[ data ]
+kw Cornish
+[ data ]
+ky Kyrgyz
+[ data ]
+la Latin
+[ data ]
+lad Ladino
+[ data ]
+lb Luxembourgish
+[ data ]
+lbe Lak
+[ data ]
+lez Lezghian
+[ data ]
+lg Ganda
+[ data ]
+li Limburgish
+[ data ]
+lij Ligurian
+[ data ]
+lmo Lombard
+[ data ]
+ln Lingala
+[ data ]
+lo Lao
+[ data ]
+lrc Northern Luri
+[ data ]
+lt Lithuanian
+[ data ]
+ltg Latgalian
+[ data ]
+lv Latvian
+[ data ]
+mai Maithili
+[ data ]
+map-bms Basa Banyumasan
+[ data ]
+mdf Moksha
+[ data ]
+mg Malagasy
+[ data ]
+mh Marshallese
+[ data ]
+mhr Eastern Mari
+[ data ]
+mi Maori
+[ data ]
+min Minangkabau
+[ data ]
+mk Macedonian
+[ data ]
+ml Malayalam
+[ data ]
+mn Mongolian
+[ data ]
+mo Moldovan
+[ data ]
+mr Marathi
+[ data ]
+mrj Western Mari
+[ data ]
+ms Malay
+[ data ]
+mt Maltese
+[ data ]
+mus Creek
+[ data ]
+mwl Mirandese
+[ data ]
+my Burmese
+[ data ]
+myv Erzya
+[ data ]
+mzn Mazanderani
+[ data ]
+na Nauru
+[ data ]
+nah Nāhuatl
+[ data ]
+nap Neapolitan
+[ data ]
+nds Low German
+[ data ]
+nds-nl Low Saxon
+[ data ]
+ne Nepali
+[ data ]
+new Newari
+[ data ]
+ng Ndonga
+[ data ]
+nl Dutch
+[ data ]
+nn Norwegian Nynorsk
+[ data ]
+no Norwegian
+[ data ]
+nov Novial
+[ data ]
+nrm Nouormand
+[ data ]
+nso Northern Sotho
+[ data ]
+nv Navajo
+[ data ]
+ny Nyanja
+[ data ]
+oc Occitan
+[ data ]
+olo Livvi-Karelian
+[ data ]
+om Oromo
+[ data ]
+or Odia
+[ data ]
+os Ossetic
+[ data ]
+pa Punjabi
+[ data ]
+pag Pangasinan
+[ data ]
+pam Pampanga
+[ data ]
+pap Papiamento
+[ data ]
+pcd Picard
+[ data ]
+pdc Pennsylvania German
+[ data ]
+pfl Palatine German
+[ data ]
+pi Pali
+[ data ]
+pih Norfuk / Pitkern
+[ data ]
+pl Polish
+[ data ]
+pms Piedmontese
+[ data ]
+pnb Western Punjabi
+[ data ]
+pnt Pontic
+[ data ]
+ps Pashto
+[ data ]
+pt Portuguese
+[ data ]
+qu Quechua
+[ data ]
+rm Romansh
+[ data ]
+rmy Romani
+[ data ]
+rn Rundi
+[ data ]
+ro Romanian
+[ data ]
+roa-rup Aromanian
+[ data ]
+roa-tara Tarantino
+[ data ]
+ru Russian
+[ data ]
+rue Rusyn
+[ data ]
+rw Kinyarwanda
+[ data ]
+sa Sanskrit
+[ data ]
+sah Sakha
+[ data ]
+sc Sardinian
+[ data ]
+scn Sicilian
+[ data ]
+sco Scots
+[ data ]
+sd Sindhi
+[ data ]
+se Northern Sami
+[ data ]
+sg Sango
+[ data ]
+sh Serbo-Croatian
+[ data ]
+si Sinhala
+[ data ]
+simple Simple English
+[ data ]
+sk Slovak
+[ data ]
+sl Slovenian
+[ data ]
+sm Samoan
+[ data ]
+sn Shona
+[ data ]
+so Somali
+[ data ]
+sq Albanian
+[ data ]
+sr Serbian
+[ data ]
+srn Sranan Tongo
+[ data ]
+ss Swati
+[ data ]
+st Southern Sotho
+[ data ]
+stq Saterland Frisian
+[ data ]
+su Sundanese
+[ data ]
+sv Swedish
+[ data ]
+sw Swahili
+[ data ]
+szl Silesian
+[ data ]
+ta Tamil
+[ data ]
+tcy Tulu
+[ data ]
+te Telugu
+[ data ]
+tet Tetum
+[ data ]
+tg Tajik
+[ data ]
+th Thai
+[ data ]
+ti Tigrinya
+[ data ]
+tk Turkmen
+[ data ]
+tl Tagalog
+[ data ]
+tn Tswana
+[ data ]
+to Tongan
+[ data ]
+tpi Tok Pisin
+[ data ]
+tr Turkish
+[ data ]
+ts Tsonga
+[ data ]
+tt Tatar
+[ data ]
+tum Tumbuka
+[ data ]
+tw Twi
+[ data ]
+ty Tahitian
+[ data ]
+tyv Tuvinian
+[ data ]
+udm Udmurt
+[ data ]
+ug Uyghur
+[ data ]
+uk Ukrainian
+[ data ]
+ur Urdu
+[ data ]
+uz Uzbek
+[ data ]
+ve Venda
+[ data ]
+vec Venetian
+[ data ]
+vep Veps
+[ data ]
+vi Vietnamese
+[ data ]
+vls West Flemish
+[ data ]
+vo Volapük
+[ data ]
+wa Walloon
+[ data ]
+war Waray
+[ data ]
+wo Wolof
+[ data ]
+wuu Wu Chinese
+[ data ]
+xal Kalmyk
+[ data ]
+xh Xhosa
+[ data ]
+xmf Mingrelian
+[ data ]
+yi Yiddish
+[ data ]
+yo Yoruba
+[ data ]
+za Zhuang
+[ data ]
+zea Zeelandic
+[ data ]
+zh Chinese
+[ data ]
+zh-classical Classical Chinese
+[ data ]
+zh-min-nan Chinese (Min Nan)
+[ data ]
+zh-yue Cantonese
+[ data ]
+zu Zulu
+[ data ]
