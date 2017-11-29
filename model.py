@@ -4,7 +4,7 @@ from keras.layers import LSTM, Lambda
 from keras.layers import TimeDistributed, Bidirectional
 from keras.layers.normalization import BatchNormalization
 
-def CL_LSTM():
+def CL_LSTM(max_sentences, max_len):
   filter_length = [5, 3, 3]
   nb_filter = [196, 196, 256]
   pool_length = 2

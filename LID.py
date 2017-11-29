@@ -130,7 +130,7 @@ y_test = y[300:]
 
 # model = Model(inputs=document, outputs=output)
 
-model = CL_LSTM()
+model = CL_LSTM(max_sentences, maxlen)
 
 if checkpoint:
     model.load_weights(checkpoint)
