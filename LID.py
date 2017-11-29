@@ -56,7 +56,7 @@ indices_char = dict((i, c) for i, c in enumerate(chars))
 
 
 maxlen = 512
-max_sentences = 4100
+max_sentences = 250
 
 X = np.ones((len(docs), max_sentences, maxlen), dtype=np.int64) * -1
 y = np.array(labels)
