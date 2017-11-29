@@ -4,6 +4,14 @@ from keras.layers import LSTM, Lambda
 from keras.layers import TimeDistributed, Bidirectional
 from keras.layers.normalization import BatchNormalization
 
+def binarize(x, sz=71):
+    return tf.to_float(tf.one_hot(x, sz, on_value=1, off_value=0, axis=-1))
+
+
+def binarize_outshape(in_shape):
+    return in_shape[0], in_shape[1], 71
+
+
 def CL_LSTM(max_sentences, maxlen):
   filter_length = [5, 3, 3]
   nb_filter = [196, 196, 256]
