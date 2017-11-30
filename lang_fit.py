@@ -36,8 +36,8 @@ def edits2(word):
     "All edits that are two edits away from `word`."
     return (e2 for e1 in edits1(word) for e2 in edits1(e1))
 
-if __name__ == "__main__":
-    with open(sys.argv[1]) as f:
+def lang_fit(document):
+    with open(document) as f:
         for each in f:
             each = each.rstrip().split()
             line = []
