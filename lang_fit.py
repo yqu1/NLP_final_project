@@ -1,10 +1,17 @@
 import sys
 import re
 from collections import Counter
+from googletrans import Translator
+from googletrans import LANGCODES
 
+docroot = '/afs/crc.nd.edu/user/n/nsmith9/NLP_final_project/googleTrain'
+trans = Translator()
+tmp = trans.detect(open(sys.argv[1]).read())
+scorrect = True
+if tmp.lang not in LANGCODES.values():
+    scorrect = False
 def words(text): return re.findall(r'\w+', text.lower())
-
-WORDS = Counter(words(open(sys.argv[2]).read()))
+WORDS = Counter(words(docroot + '/' + tmp.lang + '.txt'))
 
 def P(word, N=sum(WORDS.values())):
     "Probability of `word`."
@@ -36,11 +43,16 @@ def edits2(word):
     "All edits that are two edits away from `word`."
     return (e2 for e1 in edits1(word) for e2 in edits1(e1))
 
-def lang_fit(document):
-    with open(document) as f:
+if __name__ == '__main__':
+    trans = Translator()
+    with open(sys.argv[1]) as f:
         for each in f:
             each = each.rstrip().split()
-            line = []
-            for word in each:
-                line.append(correction(word))
-            print(' '.join(line))
+            if scorrect:
+                line = []
+                for word in each:
+                    line.append(correction(word))
+                result = trans.translate(' '.join(line))
+            else:
+                result = trans.translate(' '.join(each))
+            print(result.text)

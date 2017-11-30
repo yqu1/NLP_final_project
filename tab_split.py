@@ -22,6 +22,8 @@ for doc in doc_tags:
     temp = ' '.join(temp).replace('_','')
     if len(temp.strip()) > 0:
         temp = regex.sub('',temp)
+        if doc_tags[doc] == 'regimechange':
+            continue
         text_tags[temp] = doc_tags[doc]
 text_tags = json.dumps(text_tags)
 print(text_tags)
