@@ -1,6 +1,8 @@
+from googletrans import LANGCODES
 import xml.etree.ElementTree as ET
 import re
 import os
+
 
 def clean(s):
     return re.sub('[^a-zA-Z]+', ' ', s)
@@ -14,7 +16,7 @@ def get_text_from_xml(filename):
 	return text
 
 def get_text_from_bio(filename, outname):
-	f_out = open(outname + '.txt', 'w')
+	f_out = open("data_transform/" + outname + '.txt', 'w')
 	with open(filename) as f:
 		lines = f.readlines()
 		temp = []
@@ -51,6 +53,16 @@ def createDataLabel():
 		docs.append(doc)
 	return docs, labels
 
+def loadData(filename):
+        labels = []
+        docs = []
+        for fd in os.listdir(filename):
+                label = fd.split('.')[0]
+                doc = docToSentences(filename + "/" + fd)
+                labels.append(label)
+                docs.append(doc)
+        return docs, labels
+
 #split one single training data file into multiple files
 def splitFiles(filename):
 	def partition(lst, n):
@@ -66,12 +78,5 @@ def splitFiles(filename):
 			f_out.close()
 
 def languageList():
-	lang = []
-	with open("language_list.txt") as f:
-		lines = f.readlines()
-		for l in lines:
-			if l[0] != "[":
-				lang.append(l.split()[0])
-	return lang
-
+	return LANGCODES.values()
 

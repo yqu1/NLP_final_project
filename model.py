@@ -53,7 +53,7 @@ def CL_LSTM(max_sentences, maxlen):
   output = Dropout(0.3)(b_lstm_doc)
   output = Dense(128, activation='relu')(output)
   output = Dropout(0.3)(output)
-  output = Dense(1, activation='sigmoid')(output)
+  output = Dense(104, activation='softmax')(output)
 
   model = Model(inputs=document, outputs=output)
   return model

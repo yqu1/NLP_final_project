@@ -11,3 +11,7 @@ pipeline
 	translate the text to english given its most possible language
 
 	classify disaster type
+
+todo:
+	retrain model on 50 languages (provided by google api)
+	map api language name to google language name
