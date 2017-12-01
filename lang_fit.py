@@ -4,6 +4,9 @@ from collections import Counter
 from googletrans import Translator
 from googletrans import LANGCODES
 import json
+
+train_to_test = {'Crash':'other', 'Bombings':'terrorism', 'Collapse':'other', 'Explosion':'terrorism', 'Fire':'other', 'Meteorite':'other', 'Typhoon':'other', 'Earthquake':'other', 'Floods':'other', 'Shootings':'crimeviolence', 'Derailment':'other', 'Wildfire':'other', 'Haze':'other'}
+
 docroot = '/afs/crc.nd.edu/user/n/nsmith9/NLP_final_project/googleTrain'
 trans = Translator()
 scorrect = True
