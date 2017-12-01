@@ -4,6 +4,7 @@ from collections import Counter
 from googletrans import Translator
 from googletrans import LANGCODES
 import json
+from NB_model import *
 
 train_to_test = {'Crash':'other', 'Bombings':'terrorism', 'Collapse':'other', 'Explosion':'terrorism', 'Fire':'other', 'Meteorite':'other', 'Typhoon':'other', 'Earthquake':'other', 'Floods':'other', 'Shootings':'crimeviolence', 'Derailment':'other', 'Wildfire':'other', 'Haze':'other'}
 
@@ -63,9 +64,12 @@ if __name__ == '__main__':
                 for word in each:
                     line.append(correction(word))
                 if len(line) > 0:
-                    result = trans.translate(' '.join(line))
-                    tot_list.append([result.text,tag])
-                    print(tot_list)
+                    try:
+                        result = trans.translate(' '.join(line))
+                        tot_list.append([result.text,tag])
+                        print(tot_list)
+                    except:
+                        continue
             else:
                 if len(line) > 0:
                     try:
@@ -74,3 +78,6 @@ if __name__ == '__main__':
                         print(tot_list)
                     except:
                         continue
+    NB = Naive_Bayes_Classifier()
+    NB.load()
+    NB.test(tot_list, train_to_test)
