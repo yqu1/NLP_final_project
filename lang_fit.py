@@ -3,13 +3,17 @@ import re
 from collections import Counter
 from googletrans import Translator
 from googletrans import LANGCODES
-
+import json
 docroot = '/afs/crc.nd.edu/user/n/nsmith9/NLP_final_project/googleTrain'
 trans = Translator()
-tmp = trans.detect(open(sys.argv[1]).read())
 scorrect = True
-if tmp.lang not in LANGCODES.values():
-    scorrect = False
+with open(sys.argv[1]) as json_data:
+    d = json.load(json_data)
+    lkeys = list(d.keys())
+    tmp = trans.detect(lkeys[0])
+    print(tmp.lang)
+    if tmp.lang not in LANGCODES.values():
+        scorrect = False
 def words(text): return re.findall(r'\w+', text.lower())
 WORDS = Counter(words(docroot + '/' + tmp.lang + '.txt'))
 
@@ -45,14 +49,25 @@ def edits2(word):
 
 if __name__ == '__main__':
     trans = Translator()
+    tot_list = []
     with open(sys.argv[1]) as f:
+        f = json.load(f)
         for each in f:
+            tag = f[each]
             each = each.rstrip().split()
             if scorrect:
                 line = []
                 for word in each:
                     line.append(correction(word))
-                result = trans.translate(' '.join(line))
+                if len(line) > 0:
+                    result = trans.translate(' '.join(line))
+                    tot_list.append([result.text,tag])
+                    print(tot_list)
             else:
-                result = trans.translate(' '.join(each))
-            print(result.text)
+                if len(line) > 0:
+                    try:
+                        result = trans.translate(' '.join(each))
+                        tot_list.append([result.text,tag])
+                        print(tot_list)
+                    except:
+                        continue
